@@ -5,6 +5,22 @@ type Data = {
   name: string
 }
 
+/**
+ * @swagger
+ * /api/hello:
+ *  get:
+ *    description: hello world
+ *    responses:
+ *      200:
+ *        description: says hello
+ *  parameters:
+ *    - name: param1
+ *      in: query
+ *    - name: param2
+ *      in: query
+ *    - name: param3
+ *      in: query
+ */
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
